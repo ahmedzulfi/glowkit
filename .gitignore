@@ -13,3 +13,4 @@ ports/*/examples/*/web/pkg/
 
 # generated before publishing glowkit-cli (scripts/publish.sh)
 /crates/glowkit-cli/sources.bundle
+.vercel/

@@ -1,8 +1,9 @@
 name: Deploy to Vercel
 
-# Deploys the website (static pages + WebAssembly gallery) to the Vercel project named by the
-# VERCEL_ORG_ID / VERCEL_PROJECT_ID secrets, using VERCEL_TOKEN. Create the token in your personal
-# Vercel account so it can only deploy there. Without the secrets, this workflow does nothing.
+# Deploys the website (static pages + WebAssembly gallery) to Vercel with the VERCEL_TOKEN secret.
+# Create that token with its scope set to your personal Vercel account: the project ("glowkit") is
+# created or linked in that account only. VERCEL_ORG_ID / VERCEL_PROJECT_ID are optional overrides.
+# Without VERCEL_TOKEN, this workflow does nothing.
 
 on:
   push:
@@ -27,8 +28,8 @@ jobs:
       - name: Check Vercel secrets
         id: check
         run: |
-          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
-            echo "Vercel secrets are not set; skipping deploy."
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN is not set; skipping deploy."
             echo "ready=false" >> "$GITHUB_OUTPUT"
           else
             echo "ready=true" >> "$GITHUB_OUTPUT"
@@ -57,6 +58,11 @@ jobs:
           cargo run --release -p glowkit-gallery -- --dump-json > demos.json
           python3 scripts/catalog.py demos.json
           python3 scripts/gen-site.py demos.json
+      - name: Link the Vercel project
+        if: steps.check.outputs.ready == 'true' && env.VERCEL_PROJECT_ID == ''
+        working-directory: website
+        run: npx --yes vercel@65.12.1 link --yes --project glowkit --token "$VERCEL_TOKEN"
       - name: Deploy to Vercel (production)
         if: steps.check.outputs.ready == 'true'
-        run: npx --yes vercel@65.12.1 deploy website --prod --yes --token "$VERCEL_TOKEN"
+        working-directory: website
+        run: npx --yes vercel@65.12.1 deploy --prod --yes --token "$VERCEL_TOKEN"
