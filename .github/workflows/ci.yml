@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@1.95
+      - uses: dtolnay/rust-toolchain@1.120
       - uses: Swatinem/rust-cache@v2
       - name: Install system libraries
         run: sudo apt-get update && sudo apt-get install -y libxkbcommon-dev libgtk-3-dev
