@@ -37,6 +37,8 @@ jobs:
       # Screenshots, og.png and favicons are committed (scripts/site-images.py, scripts/render-og.mjs),
       # so CI needs no browser: it only regenerates HTML.
       - name: Generate static site pages
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
         run: python3 scripts/gen-site.py demos.json
       - uses: actions/upload-pages-artifact@v3
         with:

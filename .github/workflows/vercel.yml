@@ -1,0 +1,62 @@
+name: Deploy to Vercel
+
+# Deploys the website (static pages + WebAssembly gallery) to the Vercel project named by the
+# VERCEL_ORG_ID / VERCEL_PROJECT_ID secrets, using VERCEL_TOKEN. Create the token in your personal
+# Vercel account so it can only deploy there. Without the secrets, this workflow does nothing.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vercel
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - name: Check Vercel secrets
+        id: check
+        run: |
+          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "Vercel secrets are not set; skipping deploy."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.check.outputs.ready == 'true'
+        uses: actions/checkout@v4
+      - if: steps.check.outputs.ready == 'true'
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - if: steps.check.outputs.ready == 'true'
+        uses: Swatinem/rust-cache@v2
+      - name: Install wasm-bindgen and binaryen
+        if: steps.check.outputs.ready == 'true'
+        run: |
+          cargo install wasm-bindgen-cli --version 0.2.130 --locked
+          sudo apt-get update && sudo apt-get install -y binaryen libxkbcommon-dev libgtk-3-dev
+      - name: Build WebAssembly gallery
+        if: steps.check.outputs.ready == 'true'
+        run: ./scripts/build-web.sh
+      - name: Generate catalog and static pages
+        if: steps.check.outputs.ready == 'true'
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          cargo run --release -p glowkit-gallery -- --dump-json > demos.json
+          python3 scripts/catalog.py demos.json
+          python3 scripts/gen-site.py demos.json
+      - name: Deploy to Vercel (production)
+        if: steps.check.outputs.ready == 'true'
+        run: npx --yes vercel@65.12.1 deploy website --prod --yes --token "$VERCEL_TOKEN"

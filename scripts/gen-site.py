@@ -24,8 +24,11 @@ import subprocess
 import sys
 from collections import OrderedDict
 
-# The one place the public URL lives. For a custom domain, change this line.
-BASE_URL = "https://ahmedzulfi.github.io/glowkit/"
+# The one place the public URL lives. CI sets SITE_URL (from the repo variable of the same name);
+# for a custom domain, set that variable or change the default here.
+BASE_URL = os.environ.get("SITE_URL") or "https://ahmedzulfi.github.io/glowkit/"
+if not BASE_URL.endswith("/"):
+    BASE_URL += "/"
 REPO = "https://github.com/ahmedzulfi/glowkit"
 REPO_BLOB = REPO + "/blob/main/"
 REPO_TREE = REPO + "/tree/main/"
