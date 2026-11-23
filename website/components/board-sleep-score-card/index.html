@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sleep Score Card: animated chart component for Rust | glowkit</title>
 <meta name="description" content="A segmented ring gauge around a count-up score: one arc per sub-score, weeks paged with the date pill, hovering a row thickens its arc. Like BoardUI, in Rust.">
-<link rel="canonical" href="https://ahmedzulfi.github.io/glowkit/components/board-sleep-score-card/">
+<link rel="canonical" href="https://glowkit-website-ten.vercel.app/components/board-sleep-score-card/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
@@ -13,15 +13,15 @@
 <meta property="og:site_name" content="glowkit">
 <meta property="og:title" content="Sleep Score Card: animated chart component for Rust | glowkit">
 <meta property="og:description" content="A segmented ring gauge around a count-up score: one arc per sub-score, weeks paged with the date pill, hovering a row thickens its arc. Like BoardUI, in Rust.">
-<meta property="og:url" content="https://ahmedzulfi.github.io/glowkit/components/board-sleep-score-card/">
-<meta property="og:image" content="https://ahmedzulfi.github.io/glowkit/img/c/board-sleep-score-card.webp">
+<meta property="og:url" content="https://glowkit-website-ten.vercel.app/components/board-sleep-score-card/">
+<meta property="og:image" content="https://glowkit-website-ten.vercel.app/img/c/board-sleep-score-card.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Sleep Score Card, a glowkit chart component, rendered in the light theme">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sleep Score Card: animated chart component for Rust | glowkit">
 <meta name="twitter:description" content="A segmented ring gauge around a count-up score: one arc per sub-score, weeks paged with the date pill, hovering a row thickens its arc. Like BoardUI, in Rust.">
-<meta name="twitter:image" content="https://ahmedzulfi.github.io/glowkit/img/c/board-sleep-score-card.webp">
+<meta name="twitter:image" content="https://glowkit-website-ten.vercel.app/img/c/board-sleep-score-card.webp">
 <meta name="twitter:image:alt" content="Sleep Score Card, a glowkit chart component, rendered in the light theme">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png">
@@ -32,8 +32,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
 <style>.k{color:#6d28d9}.s{color:#166534}.t{color:#9a3f07}.f{color:#1d4ed8}.c{color:#6b6b74}.n{color:#a8350a}@media (prefers-color-scheme:dark){.k{color:#c792ea}.s{color:#c3e88d}.t{color:#ffcb6b}.f{color:#82aaff}.c{color:#8a90a6}.n{color:#f78c6c}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Sleep Score Card (glowkit)","description":"A segmented ring gauge around a count-up score: one arc per sub-score, weeks paged with the date pill, hovering a row thickens its arc.","url":"https://ahmedzulfi.github.io/glowkit/components/board-sleep-score-card/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::interactions::{BoardSleepScore, BoardSleepMetric};\n\nui.add(BoardSleepScore::new().weeks(vec![(\n    \"29 Jun - 5 Jul\".into(),\n    vec![\n        BoardSleepMetric::new(\"Duration: 7h 50m\", 49.0, 50.0),\n        BoardSleepMetric::new(\"Bedtime: 20m earlier\", 29.0, 30.0),\n        BoardSleepMetric::new(\"Interruptions: 5m awake\", 20.0, 20.0),\n    ],\n)]));","license":"https://spdx.org/licenses/MIT.html","keywords":"Sleep Score Card, Charts, Rust, egui, animated UI, Sleep Score Card","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://ahmedzulfi.github.io/glowkit/img/c/board-sleep-score-card.webp"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ahmedzulfi.github.io/glowkit/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://ahmedzulfi.github.io/glowkit/components/"},{"@type":"ListItem","position":3,"name":"Charts","item":"https://ahmedzulfi.github.io/glowkit/components/charts/"},{"@type":"ListItem","position":4,"name":"Sleep Score Card","item":"https://ahmedzulfi.github.io/glowkit/components/board-sleep-score-card/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Sleep Score Card (glowkit)","description":"A segmented ring gauge around a count-up score: one arc per sub-score, weeks paged with the date pill, hovering a row thickens its arc.","url":"https://glowkit-website-ten.vercel.app/components/board-sleep-score-card/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::interactions::{BoardSleepScore, BoardSleepMetric};\n\nui.add(BoardSleepScore::new().weeks(vec![(\n    \"29 Jun - 5 Jul\".into(),\n    vec![\n        BoardSleepMetric::new(\"Duration: 7h 50m\", 49.0, 50.0),\n        BoardSleepMetric::new(\"Bedtime: 20m earlier\", 29.0, 30.0),\n        BoardSleepMetric::new(\"Interruptions: 5m awake\", 20.0, 20.0),\n    ],\n)]));","license":"https://spdx.org/licenses/MIT.html","keywords":"Sleep Score Card, Charts, Rust, egui, animated UI, Sleep Score Card","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://glowkit-website-ten.vercel.app/img/c/board-sleep-score-card.webp"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://glowkit-website-ten.vercel.app/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://glowkit-website-ten.vercel.app/components/"},{"@type":"ListItem","position":3,"name":"Charts","item":"https://glowkit-website-ten.vercel.app/components/charts/"},{"@type":"ListItem","position":4,"name":"Sleep Score Card","item":"https://glowkit-website-ten.vercel.app/components/board-sleep-score-card/"}]}</script>
 </head>
 <body>
 <header class="nav"><div class="wrap">

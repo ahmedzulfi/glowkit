@@ -8,7 +8,7 @@ Hacker News.
 - [ ] Push the repo to `github.com/ahmedzulfi/glowkit` (default branch `main`, since the README
       images load from `raw.githubusercontent.com/ahmedzulfi/glowkit/main/...`).
 - [ ] CI is green on Linux, Windows and macOS, including the MSRV job.
-- [ ] Pages deploy works and https://ahmedzulfi.github.io/glowkit/ and `/gallery/` load in a fresh
+- [ ] Pages deploy works and https://glowkit-website-ten.vercel.app/ and `/gallery/` load in a fresh
       browser profile (and on a phone).
 - [ ] README renders on GitHub: hero and all nine grid images animate, every link resolves.
 - [ ] `./scripts/publish.sh --dry-run` passes (or packages) every crate.
@@ -19,7 +19,7 @@ Hacker News.
 ## Repository settings
 
 - [ ] **Description** and **website**: paste from `launch/github-about.txt`; website
-      `https://ahmedzulfi.github.io/glowkit/`.
+      `https://glowkit-website-ten.vercel.app/`.
 - [ ] **Topics**: `rust`, `egui`, `gui`, `ui-components`, `ai-agents`, `animation`,
       `desktop-app`, `wasm`.
 - [ ] **Social preview**: Settings, General, Social preview: upload `website/social-preview.png`.

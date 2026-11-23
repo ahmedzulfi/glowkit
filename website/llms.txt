@@ -6,24 +6,24 @@ Install with `cargo add glowkit` (all component crates are default features of t
 
 ## Key pages
 
-- [Home](https://ahmedzulfi.github.io/glowkit/): overview and quick start.
-- [All components](https://ahmedzulfi.github.io/glowkit/components/): every component, grouped by category, one page each with usage code.
-- [Live gallery](https://ahmedzulfi.github.io/glowkit/gallery/): the full component gallery compiled to WebAssembly (a canvas; use the component pages for text).
-- [AI agent UIs](https://ahmedzulfi.github.io/glowkit/agents/), [Dashboards](https://ahmedzulfi.github.io/glowkit/dashboards/), [Game UI](https://ahmedzulfi.github.io/glowkit/games/), [Motion engine](https://ahmedzulfi.github.io/glowkit/motion/).
-- [Benchmarks](https://ahmedzulfi.github.io/glowkit/benchmarks.html): frame time, tessellation and memory for every component.
-- [llms-full.txt](https://ahmedzulfi.github.io/glowkit/llms-full.txt): every component with its description, `use` path and URL.
+- [Home](https://glowkit-website-ten.vercel.app/): overview and quick start.
+- [All components](https://glowkit-website-ten.vercel.app/components/): every component, grouped by category, one page each with usage code.
+- [Live gallery](https://glowkit-website-ten.vercel.app/gallery/): the full component gallery compiled to WebAssembly (a canvas; use the component pages for text).
+- [AI agent UIs](https://glowkit-website-ten.vercel.app/agents/), [Dashboards](https://glowkit-website-ten.vercel.app/dashboards/), [Game UI](https://glowkit-website-ten.vercel.app/games/), [Motion engine](https://glowkit-website-ten.vercel.app/motion/).
+- [Benchmarks](https://glowkit-website-ten.vercel.app/benchmarks.html): frame time, tessellation and memory for every component.
+- [llms-full.txt](https://glowkit-website-ten.vercel.app/llms-full.txt): every component with its description, `use` path and URL.
 
 ## Categories
 
-21 categories: Text Animations, Backgrounds, Buttons, Cards & Borders, Cursor & Interaction, Micro-interactions, Motion & Layout, Motion Engine, 3D, Loaders & Progress, Inputs & Forms, Navigation, Overlays & Feedback, Data Display, Charts, AI, Blocks, Canvas & Editors, Dashboards & Shells, Templates, Game UI. Each has a page under https://ahmedzulfi.github.io/glowkit/components/.
+21 categories: Text Animations, Backgrounds, Buttons, Cards & Borders, Cursor & Interaction, Micro-interactions, Motion & Layout, Motion Engine, 3D, Loaders & Progress, Inputs & Forms, Navigation, Overlays & Feedback, Data Display, Charts, AI, Blocks, Canvas & Editors, Dashboards & Shells, Templates, Game UI. Each has a page under https://glowkit-website-ten.vercel.app/components/.
 
 ## Agent recipes (glowkit-stream)
 
-- [Local LLM chat with Ollama](https://ahmedzulfi.github.io/glowkit/docs/recipes/ollama-chat/): talks to Ollama, vLLM, LM Studio, OpenRouter.
-- [A rig agent UI](https://ahmedzulfi.github.io/glowkit/docs/recipes/rig-agent/): talks to a rig agent in your process.
-- [A desktop front-end for an AG-UI agent](https://ahmedzulfi.github.io/glowkit/docs/recipes/ag-ui-desktop/): talks to LangGraph, CrewAI, Mastra, Pydantic AI, ADK.
-- [A native client for a Vercel AI SDK backend](https://ahmedzulfi.github.io/glowkit/docs/recipes/vercel-ai-sdk-client/): talks to any toUIMessageStreamResponse() route.
-- [An ACP coding-agent viewer](https://ahmedzulfi.github.io/glowkit/docs/recipes/acp-viewer/): talks to Agent Client Protocol agents.
+- [Local LLM chat with Ollama](https://glowkit-website-ten.vercel.app/docs/recipes/ollama-chat/): talks to Ollama, vLLM, LM Studio, OpenRouter.
+- [A rig agent UI](https://glowkit-website-ten.vercel.app/docs/recipes/rig-agent/): talks to a rig agent in your process.
+- [A desktop front-end for an AG-UI agent](https://glowkit-website-ten.vercel.app/docs/recipes/ag-ui-desktop/): talks to LangGraph, CrewAI, Mastra, Pydantic AI, ADK.
+- [A native client for a Vercel AI SDK backend](https://glowkit-website-ten.vercel.app/docs/recipes/vercel-ai-sdk-client/): talks to any toUIMessageStreamResponse() route.
+- [An ACP coding-agent viewer](https://glowkit-website-ten.vercel.app/docs/recipes/acp-viewer/): talks to Agent Client Protocol agents.
 
 ## Crates
 

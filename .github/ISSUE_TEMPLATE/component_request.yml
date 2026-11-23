@@ -7,7 +7,7 @@ body:
       value: |
         Requests for components that exist in web libraries are welcome. Please check
         [CATALOG.md](https://github.com/ahmedzulfi/glowkit/blob/main/CATALOG.md) and the
-        [gallery](https://ahmedzulfi.github.io/glowkit/gallery/) first, since it may already exist under another name.
+        [gallery](https://glowkit-website-ten.vercel.app/gallery/) first, since it may already exist under another name.
   - type: dropdown
     id: kind
     attributes:

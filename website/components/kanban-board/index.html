@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kanban Board: Rust canvas editor component for egui | glowkit</title>
 <meta name="description" content="Drag cards within and between columns: other cards spring aside to open a gap and dropped cards glide into place. Rust and egui, native and WebAssembly.">
-<link rel="canonical" href="https://ahmedzulfi.github.io/glowkit/components/kanban-board/">
+<link rel="canonical" href="https://glowkit-website-ten.vercel.app/components/kanban-board/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
@@ -13,15 +13,15 @@
 <meta property="og:site_name" content="glowkit">
 <meta property="og:title" content="Kanban Board: Rust canvas editor component for egui | glowkit">
 <meta property="og:description" content="Drag cards within and between columns: other cards spring aside to open a gap and dropped cards glide into place. Rust and egui, native and WebAssembly.">
-<meta property="og:url" content="https://ahmedzulfi.github.io/glowkit/components/kanban-board/">
-<meta property="og:image" content="https://ahmedzulfi.github.io/glowkit/img/c/kanban-board.webp">
+<meta property="og:url" content="https://glowkit-website-ten.vercel.app/components/kanban-board/">
+<meta property="og:image" content="https://glowkit-website-ten.vercel.app/img/c/kanban-board.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Kanban Board, a glowkit canvas editor component, rendered in the light theme">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kanban Board: Rust canvas editor component for egui | glowkit">
 <meta name="twitter:description" content="Drag cards within and between columns: other cards spring aside to open a gap and dropped cards glide into place. Rust and egui, native and WebAssembly.">
-<meta name="twitter:image" content="https://ahmedzulfi.github.io/glowkit/img/c/kanban-board.webp">
+<meta name="twitter:image" content="https://glowkit-website-ten.vercel.app/img/c/kanban-board.webp">
 <meta name="twitter:image:alt" content="Kanban Board, a glowkit canvas editor component, rendered in the light theme">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png">
@@ -32,8 +32,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
 <style>.k{color:#6d28d9}.s{color:#166534}.t{color:#9a3f07}.f{color:#1d4ed8}.c{color:#6b6b74}.n{color:#a8350a}@media (prefers-color-scheme:dark){.k{color:#c792ea}.s{color:#c3e88d}.t{color:#ffcb6b}.f{color:#82aaff}.c{color:#8a90a6}.n{color:#f78c6c}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Kanban Board (glowkit)","description":"Drag cards within and between columns: other cards spring aside to open a gap and dropped cards glide into place. Inline add, WIP limits, labels, avatars, due dates and collapsible columns.","url":"https://ahmedzulfi.github.io/glowkit/components/kanban-board/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::canvas::{Board, Column, Card, KanbanBoard, KanbanState};\n\nlet mut board = Board { columns: vec![\n    Column::new(1, \"Todo\", hex(\"#71717A\")).cards(vec![\n        Card::new(1, \"Design onboarding\").label(\"Design\", hex(\"#8B5CF6\")).assignees(&[\"AK\"]).due(\"Nov 14\"),\n    ]),\n    Column::new(2, \"In progress\", hex(\"#3B82F6\")).wip(3),\n] };\nKanbanBoard::new(&mut board, &mut state).height(480.0).show(ui);","license":"https://spdx.org/licenses/MIT.html","keywords":"Kanban Board, Canvas & Editors, Rust, egui, animated UI, Board, Board view, Board, Sortable multiple containers","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://ahmedzulfi.github.io/glowkit/img/c/kanban-board.webp"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ahmedzulfi.github.io/glowkit/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://ahmedzulfi.github.io/glowkit/components/"},{"@type":"ListItem","position":3,"name":"Canvas & Editors","item":"https://ahmedzulfi.github.io/glowkit/components/canvas-editors/"},{"@type":"ListItem","position":4,"name":"Kanban Board","item":"https://ahmedzulfi.github.io/glowkit/components/kanban-board/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Kanban Board (glowkit)","description":"Drag cards within and between columns: other cards spring aside to open a gap and dropped cards glide into place. Inline add, WIP limits, labels, avatars, due dates and collapsible columns.","url":"https://glowkit-website-ten.vercel.app/components/kanban-board/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::canvas::{Board, Column, Card, KanbanBoard, KanbanState};\n\nlet mut board = Board { columns: vec![\n    Column::new(1, \"Todo\", hex(\"#71717A\")).cards(vec![\n        Card::new(1, \"Design onboarding\").label(\"Design\", hex(\"#8B5CF6\")).assignees(&[\"AK\"]).due(\"Nov 14\"),\n    ]),\n    Column::new(2, \"In progress\", hex(\"#3B82F6\")).wip(3),\n] };\nKanbanBoard::new(&mut board, &mut state).height(480.0).show(ui);","license":"https://spdx.org/licenses/MIT.html","keywords":"Kanban Board, Canvas & Editors, Rust, egui, animated UI, Board, Board view, Board, Sortable multiple containers","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://glowkit-website-ten.vercel.app/img/c/kanban-board.webp"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://glowkit-website-ten.vercel.app/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://glowkit-website-ten.vercel.app/components/"},{"@type":"ListItem","position":3,"name":"Canvas & Editors","item":"https://glowkit-website-ten.vercel.app/components/canvas-editors/"},{"@type":"ListItem","position":4,"name":"Kanban Board","item":"https://glowkit-website-ten.vercel.app/components/kanban-board/"}]}</script>
 </head>
 <body>
 <header class="nav"><div class="wrap">

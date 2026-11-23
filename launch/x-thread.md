@@ -106,7 +106,7 @@ No network, no keys.
 glowkit is 0.1 and I'm one person, so expect rough edges. Issues and PRs are very welcome.
 
 Code: https://github.com/ahmedzulfi/glowkit
-Live gallery (Rust compiled to WASM): https://ahmedzulfi.github.io/glowkit/gallery/
+Live gallery (Rust compiled to WASM): https://glowkit-website-ten.vercel.app/gallery/
 
 Built on egui by @ernerfeldt.
 

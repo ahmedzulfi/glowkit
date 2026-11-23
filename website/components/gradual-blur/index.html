@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gradual Blur: animated Rust motion component (egui) | glowkit</title>
 <meta name="description" content="A progressive blur at the edge of a scroller: content softens and fades in steps as it leaves. Like React Bits, in Rust. Rust and egui, native and WebAssembly.">
-<link rel="canonical" href="https://ahmedzulfi.github.io/glowkit/components/gradual-blur/">
+<link rel="canonical" href="https://glowkit-website-ten.vercel.app/components/gradual-blur/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
@@ -13,15 +13,15 @@
 <meta property="og:site_name" content="glowkit">
 <meta property="og:title" content="Gradual Blur: animated Rust motion component (egui) | glowkit">
 <meta property="og:description" content="A progressive blur at the edge of a scroller: content softens and fades in steps as it leaves. Like React Bits, in Rust. Rust and egui, native and WebAssembly.">
-<meta property="og:url" content="https://ahmedzulfi.github.io/glowkit/components/gradual-blur/">
-<meta property="og:image" content="https://ahmedzulfi.github.io/glowkit/img/c/gradual-blur.webp">
+<meta property="og:url" content="https://glowkit-website-ten.vercel.app/components/gradual-blur/">
+<meta property="og:image" content="https://glowkit-website-ten.vercel.app/img/c/gradual-blur.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Gradual Blur, a glowkit motion component, rendered in the light theme">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gradual Blur: animated Rust motion component (egui) | glowkit">
 <meta name="twitter:description" content="A progressive blur at the edge of a scroller: content softens and fades in steps as it leaves. Like React Bits, in Rust. Rust and egui, native and WebAssembly.">
-<meta name="twitter:image" content="https://ahmedzulfi.github.io/glowkit/img/c/gradual-blur.webp">
+<meta name="twitter:image" content="https://glowkit-website-ten.vercel.app/img/c/gradual-blur.webp">
 <meta name="twitter:image:alt" content="Gradual Blur, a glowkit motion component, rendered in the light theme">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png">
@@ -32,8 +32,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
 <style>.k{color:#6d28d9}.s{color:#166534}.t{color:#9a3f07}.f{color:#1d4ed8}.c{color:#6b6b74}.n{color:#a8350a}@media (prefers-color-scheme:dark){.k{color:#c792ea}.s{color:#c3e88d}.t{color:#ffcb6b}.f{color:#82aaff}.c{color:#8a90a6}.n{color:#f78c6c}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Gradual Blur (glowkit)","description":"A progressive blur at the edge of a scroller: content softens and fades in steps as it leaves.","url":"https://ahmedzulfi.github.io/glowkit/components/gradual-blur/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::effects::{GradualBlur, BlurEdge};\n\nGradualBlur::new().edge(BlurEdge::Bottom).height(110.0).strength(5.0).show(ui, |ui| {\n    egui::ScrollArea::vertical().max_height(340.0).show(ui, |ui| {\n        for i in 0..40 { ui.label(format!(\"Row {i}\")); }\n    });\n});","license":"https://spdx.org/licenses/MIT.html","keywords":"Gradual Blur, Motion & Layout, Rust, egui, animated UI, Gradual Blur, Progressive Blur, Progressive Blur","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://ahmedzulfi.github.io/glowkit/img/c/gradual-blur.webp"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ahmedzulfi.github.io/glowkit/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://ahmedzulfi.github.io/glowkit/components/"},{"@type":"ListItem","position":3,"name":"Motion & Layout","item":"https://ahmedzulfi.github.io/glowkit/components/motion-layout/"},{"@type":"ListItem","position":4,"name":"Gradual Blur","item":"https://ahmedzulfi.github.io/glowkit/components/gradual-blur/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Gradual Blur (glowkit)","description":"A progressive blur at the edge of a scroller: content softens and fades in steps as it leaves.","url":"https://glowkit-website-ten.vercel.app/components/gradual-blur/","codeRepository":"https://github.com/ahmedzulfi/glowkit","programmingLanguage":{"@type":"ComputerLanguage","name":"Rust"},"runtimePlatform":"egui 0.37 (Windows, macOS, Linux, WebAssembly)","codeSampleType":"code snippet","text":"use glowkit::prelude::*;\nuse glowkit::effects::{GradualBlur, BlurEdge};\n\nGradualBlur::new().edge(BlurEdge::Bottom).height(110.0).strength(5.0).show(ui, |ui| {\n    egui::ScrollArea::vertical().max_height(340.0).show(ui, |ui| {\n        for i in 0..40 { ui.label(format!(\"Row {i}\")); }\n    });\n});","license":"https://spdx.org/licenses/MIT.html","keywords":"Gradual Blur, Motion & Layout, Rust, egui, animated UI, Gradual Blur, Progressive Blur, Progressive Blur","isPartOf":{"@type":"SoftwareSourceCode","name":"glowkit","codeRepository":"https://github.com/ahmedzulfi/glowkit"},"dateModified":"2026-11-23","image":"https://glowkit-website-ten.vercel.app/img/c/gradual-blur.webp"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://glowkit-website-ten.vercel.app/"},{"@type":"ListItem","position":2,"name":"Components","item":"https://glowkit-website-ten.vercel.app/components/"},{"@type":"ListItem","position":3,"name":"Motion & Layout","item":"https://glowkit-website-ten.vercel.app/components/motion-layout/"},{"@type":"ListItem","position":4,"name":"Gradual Blur","item":"https://glowkit-website-ten.vercel.app/components/gradual-blur/"}]}</script>
 </head>
 <body>
 <header class="nav"><div class="wrap">

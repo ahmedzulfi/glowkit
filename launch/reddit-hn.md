@@ -48,8 +48,8 @@ what's missing.
 [agents note]
 
 - Code (MIT/Apache): https://github.com/ahmedzulfi/glowkit
-- Live gallery (WASM): https://ahmedzulfi.github.io/glowkit/gallery/
-- Benchmarks: https://ahmedzulfi.github.io/glowkit/benchmarks.html
+- Live gallery (WASM): https://glowkit-website-ten.vercel.app/gallery/
+- Benchmarks: https://glowkit-website-ten.vercel.app/benchmarks.html
 
 Feedback on API shape is the most useful thing right now, especially from people already shipping
 egui apps.
@@ -64,7 +64,7 @@ egui apps.
 
 glowkit is a set of crates of animated components for egui 0.37: buttons, cards, text effects,
 backgrounds, charts, a motion engine, a node editor, game UI, AI chat and agent views, and full
-app templates. Live gallery (the WASM build): https://ahmedzulfi.github.io/glowkit/gallery/
+app templates. Live gallery (the WASM build): https://glowkit-website-ten.vercel.app/gallery/
 
 How it fits into egui:
 
@@ -119,7 +119,7 @@ targets the kind of app people are rewriting from Electron into native Rust: age
 dashboards, dev tools and games.
 
 The gallery runs in the browser as WebAssembly, so you can try everything without installing
-anything: https://ahmedzulfi.github.io/glowkit/gallery/
+anything: https://glowkit-website-ten.vercel.app/gallery/
 
 What's in it: 683 components (charts, text effects, a motion engine, a software 3D renderer, a
 node editor, game menus and HUDs, full app templates) and an AI agent UI kit. The agent part is

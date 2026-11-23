@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahmedzulfi.github.io/glowkit/sitemap.xml
+Sitemap: https://glowkit-website-ten.vercel.app/sitemap.xml

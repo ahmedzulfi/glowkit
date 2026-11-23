@@ -26,7 +26,7 @@ from collections import OrderedDict
 
 # The one place the public URL lives. CI sets SITE_URL (from the repo variable of the same name);
 # for a custom domain, set that variable or change the default here.
-BASE_URL = os.environ.get("SITE_URL") or "https://ahmedzulfi.github.io/glowkit/"
+BASE_URL = os.environ.get("SITE_URL") or "https://glowkit-website-ten.vercel.app/"
 if not BASE_URL.endswith("/"):
     BASE_URL += "/"
 REPO = "https://github.com/ahmedzulfi/glowkit"
@@ -1202,6 +1202,8 @@ def build_manifest():
 def build_sitemap():
     entries = []
     for sp in STATIC_PAGES:
+        if sp["rel"] == "index.html":
+            continue  # "/" redirects to the live gallery (vercel.json), so it isn't a canonical URL
         entries.append((BASE_URL + rel_url(sp["rel"]), None))
     for p in PAGES:
         entries.append((p["url"], None))

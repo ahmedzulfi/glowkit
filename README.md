@@ -10,7 +10,7 @@
 [![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
 [![made with egui](https://img.shields.io/badge/made%20with-egui-6e56cf)](https://github.com/emilk/egui)
 
-[Website](https://ahmedzulfi.github.io/glowkit/) · [Live gallery](https://ahmedzulfi.github.io/glowkit/gallery/) · [Catalog](CATALOG.md) · [Benchmarks](https://ahmedzulfi.github.io/glowkit/benchmarks.html) · [Docs](https://docs.rs/glowkit)
+[Website](https://glowkit-website-ten.vercel.app/) · [Live gallery](https://glowkit-website-ten.vercel.app/gallery/) · [Catalog](CATALOG.md) · [Benchmarks](https://glowkit-website-ten.vercel.app/benchmarks.html) · [Docs](https://docs.rs/glowkit)
 
 <img src="https://raw.githubusercontent.com/ahmedzulfi/glowkit/main/assets/readme/hero.webp" alt="glowkit components recorded from the live gallery: a streaming agent thread, an agent sessions app, a trading terminal, a game menu, a refracting glass panel and a 3D particle morph" width="100%">
 
@@ -28,12 +28,12 @@ get from React component libraries: 683 animated components for Windows, macOS, 
 * **Real agent UIs.** Streaming Markdown, reasoning, tool calls and approvals, driven by real
   protocols: AG-UI, the Vercel AI SDK stream, the Agent Client Protocol, async-openai and rig.
 * **Motion that stays cheap.** Springs, timelines, layout animations, a software 3D renderer and
-  refracting glass, measured per component in [benchmarks](https://ahmedzulfi.github.io/glowkit/benchmarks.html).
+  refracting glass, measured per component in [benchmarks](https://glowkit-website-ten.vercel.app/benchmarks.html).
   One-shot animations stop repainting when they finish, so idle apps stay idle.
 
 ## A few of them
 
-Recorded from the [live gallery](https://ahmedzulfi.github.io/glowkit/gallery/) (WebAssembly build of the same code).
+Recorded from the [live gallery](https://glowkit-website-ten.vercel.app/gallery/) (WebAssembly build of the same code).
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ Recorded from the [live gallery](https://ahmedzulfi.github.io/glowkit/gallery/) 
 </tr>
 </table>
 
-Everything else is in the [gallery](https://ahmedzulfi.github.io/glowkit/gallery/) and in
+Everything else is in the [gallery](https://glowkit-website-ten.vercel.app/gallery/) and in
 [CATALOG.md](CATALOG.md).
 
 ## Quick start
@@ -178,9 +178,9 @@ Each category is its own crate behind a feature of the `glowkit` umbrella crate.
 
 ## Links
 
-* [Website](https://ahmedzulfi.github.io/glowkit/) and [live gallery](https://ahmedzulfi.github.io/glowkit/gallery/)
+* [Website](https://glowkit-website-ten.vercel.app/) and [live gallery](https://glowkit-website-ten.vercel.app/gallery/)
 * [CATALOG.md](CATALOG.md): every component, mapped to its equivalents in 20+ web libraries
-* [Benchmarks](https://ahmedzulfi.github.io/glowkit/benchmarks.html): frame time, vertices and allocations per component
+* [Benchmarks](https://glowkit-website-ten.vercel.app/benchmarks.html): frame time, vertices and allocations per component
 * [Customization guide](crates/glowkit/docs/CUSTOMIZING.md) and [API docs](https://docs.rs/glowkit)
 * [Ports](ports/): experimental GPUI and Dioxus versions of the design language
 * [CONTRIBUTING.md](CONTRIBUTING.md) · [CHANGELOG.md](CHANGELOG.md)
